@@ -1,0 +1,105 @@
+.CompCssDJsonViewTable .jh-root, .jh-type-object, .jh-type-array, .jh-key, .jh-value, .jh-root tr{
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.CompCssDJsonViewTable .jh-key, .jh-value{
+    margin: 0;
+    padding: 0.2em;
+}
+
+.CompCssDJsonViewTable .jh-value{
+    border-left: 1px solid #ddd;
+}
+
+.CompCssDJsonViewTable .jh-type-number{
+    text-align: center;
+    color: #f9ae58;
+}
+
+.CompCssDJsonViewTable .jh-type-bool-true{
+    text-align: center;
+    color: #ec5f66;
+}
+
+.CompCssDJsonViewTable .jh-type-bool-false{
+    text-align: center;
+    color: #ec5f66;
+}
+
+.CompCssDJsonViewTable .jh-type-bool-image {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    vertical-align: bottom;
+}
+
+.CompCssDJsonViewTable .jh-type-string{
+    color: #86b25c;
+}
+
+.CompCssDJsonViewTable .jh-array-key{
+    font-size: small;
+    text-align: center;
+}
+
+.CompCssDJsonViewTable .jh-object-key, .jh-array-key{
+    color: #444;
+    vertical-align: top;
+}
+
+.CompCssDJsonViewTable .jh-type-object > tr:nth-child(odd), .jh-type-array > tr:nth-child(odd){
+    background-color: #f5f5f5;
+}
+
+.CompCssDJsonViewTable .jh-type-object > tr:nth-child(even), .jh-type-array > tr:nth-child(even){
+    background-color: #fff;
+}
+
+.CompCssDJsonViewTable .jh-type-object, .jh-type-array{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.CompCssDJsonViewTable .jh-root{
+    border: 1px solid #ccc;
+    margin: 0.2em;
+}
+
+.CompCssDJsonViewTable .jh-key{
+    text-align: left;
+}
+
+.CompCssDJsonViewTable .jh-type-object > tr, .jh-type-array > tr{
+    border: 1px solid #ddd;
+    border-bottom: none;
+}
+
+.CompCssDJsonViewTable .jh-type-object > tr:last-child, .jh-type-array > tr:last-child{
+    border-bottom: 1px solid #ddd;
+}
+
+.CompCssDJsonViewTable .jh-type-object > tr:hover, .jh-type-array > tr:hover{
+    border: 1px solid #F99927;
+}
+
+.CompCssDJsonViewTable .jh-empty{
+    font-style: italic;
+    color: #999;
+    font-size: small;
+}
+
+.CompCssDJsonViewTable .jh-a {
+    text-decoration: none;
+}
+
+.CompCssDJsonViewTable .jh-a:hover{
+    text-decoration: underline;
+}
+
+.CompCssDJsonViewTable .jh-a span.jh-type-string {
+    text-decoration: none;
+    color : #268ddd;
+    font-style: normal;
+}
