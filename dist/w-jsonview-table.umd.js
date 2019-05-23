@@ -60,7 +60,12 @@
    * @param {Object} jsonObj 輸入Json物件
    * @param {Element} rootElem 輸入初始化元素
    * @param {Object} [option={}] 輸入設定物件，預設為空物件
-   * @param {Boolean} [option.expanded=false] 輸入是否預先展開，預設為false
+   * @param {Boolean} [option.showArrayIndex=true] 輸入是否顯示陣列指標，預設為true
+   * @param {Boolean} [option.hyperlinks.enable=false] 輸入是否產生超連結，預設為false
+   * @param {Array} [option.hyperlinks.keys=['url']] 輸入產生超連結之key名稱，可輸入多種key，為陣列，預設key為['url']
+   * @param {String} [option.hyperlinks.target='_blank'] 輸入產生超連結之開啟方式，預設key為'_blank'
+   * @param {Boolean} [option.bool.showText=false] 輸入是否將boolean顯示為文字，預設為false
+   * @param {Object} [option.bool.text={true:'Yes',false:'No'}] 輸入將boolean顯示為文字之對應名稱，預設為{true:'Yes',false:'No'}
    */
 
   function viewJsonTable(jsonObj, rootElem, option) {
@@ -105,43 +110,11 @@
     Init(jsonObj, rootElem, option);
     /**
      * Initialize
-     * @param {Object} jsonObj 輸入Json物件
-     * @param {Element} rootElem 輸入初始化元素
-     * @param {Object} [option={}] 輸入設定物件，預設為空物件
-     * @param {Boolean} [option.expanded=false] 輸入是否預先展開，預設為false
      */
 
     function Init(jsonObj, rootElem) {
       var option = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-      //     // Show or hide Array-Indices in the output
-      //     showArrayIndex: true,
-      //     // Hyperlinks Option
-      //     // Enable <a> tag in the output html based on object keys
-      //     // Supports only strings and arrays
-      //     hyperlinks: {
-      //         enable: true,
-      //         keys: ['url'], // Keys which will be output as links
-      //         target: '_blank' // 'target' attribute of a
-      //     },
-      //     // Options for displaying bool
-      //     bool: {
-      //         // Show text? And what text for true & false?
-      //         showText: true,
-      //         text: {
-      //             true: 'Yes',
-      //             false: 'No'
-      //         },
-      //         // Show image? And which images (urls)?
-      //         showImage: true,
-      //         img: {
-      //             true: 'css/true.png',
-      //             false: 'css/false.png'
-      //         }
-      //     }
-      // }
       //clear
-
-
       rootElem.innerHTML = ''; //add class
 
       rootElem.classList.add('CompCssDJsonViewTable'); //render
@@ -447,6 +420,7 @@
 
     function format(data, options) {
       options = validateOptions(options || {});
+      console.log('format options', options);
       var result;
       result = _format(data, options);
       result.className = result.className + ' ' + prefixer('root');
