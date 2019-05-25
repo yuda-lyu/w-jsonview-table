@@ -1,7 +1,13 @@
 # w-jsonview-table
 A wrapper for json.human.js.
 
-![language](https://img.shields.io/badge/language-JavaScript-orange.svg) [![npm version](http://img.shields.io/npm/v/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) [![Build Status](https://travis-ci.org/yuda-lyu/w-jsonview-table.svg?branch=master)](https://travis-ci.org/yuda-lyu/w-jsonview-table) [![license](https://img.shields.io/npm/l/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) [![npm download](https://img.shields.io/npm/dt/w-jsonview-table.svg)](https://npmjs.org/package/w-jsonview-table) [![jsdelivr download](https://data.jsdelivr.com/v1/package/npm/w-jsonview-table/badge)](https://www.jsdelivr.com/package/npm/w-jsonview-table)
+![language](https://img.shields.io/badge/language-JavaScript-orange.svg) 
+[![npm version](http://img.shields.io/npm/v/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) 
+[![Build Status](https://travis-ci.org/yuda-lyu/w-jsonview-table.svg?branch=master)](https://travis-ci.org/yuda-lyu/w-jsonview-table) 
+[![license](https://img.shields.io/npm/l/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) 
+[![gzip file size](http://img.badgesize.io/yuda-lyu/w-jsonview-table/master/dist/w-jsonview-table.umd.js.svg?compression=gzip)](https://github.com/yuda-lyu/w-jsonview-table)
+[![npm download](https://img.shields.io/npm/dt/w-jsonview-table.svg)](https://npmjs.org/package/w-jsonview-table) 
+[![jsdelivr download](https://data.jsdelivr.com/v1/package/npm/w-jsonview-table/badge)](https://www.jsdelivr.com/package/npm/w-jsonview-table)
 
 ## Documentation
 To view documentation or get support, visit [docs](https://yuda-lyu.github.io/w-jsonview-table/global.html).
