@@ -7,7 +7,7 @@ A wrapper for json.human.js.
 [![license](https://img.shields.io/npm/l/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) 
 [![gzip file size](http://img.badgesize.io/yuda-lyu/w-jsonview-table/master/dist/w-jsonview-table.umd.js.svg?compression=gzip)](https://github.com/yuda-lyu/w-jsonview-table)
 [![npm download](https://img.shields.io/npm/dt/w-jsonview-table.svg)](https://npmjs.org/package/w-jsonview-table) 
-[![jsdelivr download](https://data.jsdelivr.com/v1/package/npm/w-jsonview-table/badge)](https://www.jsdelivr.com/package/npm/w-jsonview-table)
+[![jsdelivr download](https://img.shields.io/jsdelivr/npm/hm/w-jsonview-table.svg)](https://www.jsdelivr.com/package/npm/w-jsonview-table)
 
 ## Documentation
 To view documentation or get support, visit [docs](https://yuda-lyu.github.io/w-jsonview-table/global.html).
