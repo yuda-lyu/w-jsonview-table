@@ -23,20 +23,8 @@ async function main() {
     //rdme
     let rdme = getReadme()
 
-    //rdmever
-    let rdmever = ''
-    _.each(rdme.lines, function(v) {
-        if (v.indexOf('dist/w-jsonview-table.umd.js') >= 0) {
-            rdmever = v
-        }
-    })
-
     //replace
-    let c = ''
-    if (rdmever !== '') {
-        let r = `<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@${pkg.version}/dist/w-jsonview-table.umd.js"></script>`
-        c = rdme.content.replace(rdmever, r)
-    }
+    let c = rdme.content.replace(/(w-jsonview-table@)+([0-9]{1}.[0-9]{1}.[0-9]{1})/g, 'w-jsonview-table@' + pkg.version)
 
     //write
     //console.log(c)
