@@ -1,8 +1,8 @@
 {
   "name": "w-jsonview-table",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for json.human.js.",
-  "main": "",
+  "main": "dist/w-jsonview-table.umd.js",
   "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.4.4",
