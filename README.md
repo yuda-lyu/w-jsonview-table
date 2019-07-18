@@ -46,5 +46,5 @@ let jv=window['w-jsonview-table']
 let data={a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',false],d1:{cid:'WK2WHS',name:'peter',unique:false}}
 let ele=document.querySelector('#id')
 
-jv(data, element)
+jv(data, ele)
 ```
