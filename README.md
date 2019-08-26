@@ -37,7 +37,7 @@ jv(data, element)
 ### In a browser(UMD module):
 Add script for w-jsonview-table.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.3/dist/w-jsonview-table.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.6/dist/w-jsonview-table.umd.js"></script>
 ```
 Directly use:
 ```alias
