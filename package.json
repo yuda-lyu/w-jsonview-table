@@ -1,6 +1,6 @@
 {
   "name": "w-jsonview-table",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "A wrapper for json.human.js.",
   "main": "dist/w-jsonview-table.umd.js",
   "dependencies": {},
