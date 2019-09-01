@@ -1,4 +1,4 @@
-import './viewJsonTable.css'
+import './WJsonviewTable.css'
 
 
 /**
@@ -15,7 +15,7 @@ import './viewJsonTable.css'
  * @param {Boolean} [option.bool.showText=false] 輸入是否將boolean顯示為文字，預設為false
  * @param {Object} [option.bool.text={true:'Yes',false:'No'}] 輸入將boolean顯示為文字之對應名稱，預設為{true:'Yes',false:'No'}
  */
-function viewJsonTable(jsonObj, rootElem, option) {
+function WJsonviewTable(jsonObj, rootElem, option) {
     let prefixer = makePrefixer('jh')
     let p = prefixer
     let ARRAY = 1
@@ -430,4 +430,4 @@ function viewJsonTable(jsonObj, rootElem, option) {
 }
 
 
-export default viewJsonTable
+export default WJsonviewTable
