@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-tw">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <title>small data for w-jsonview-table</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@latest/dist/w-jsonview-table.umd.js"></script>
+
+</head>
+<body>
+    
+    <div id="app" style="display:flex; font-size:10pt; font-family:Microsoft JhengHei,Helvetica;">
+        <div id="tree1"></div>
+        <div id="tree2" style="margin-left:10px;"></div>
+    </div>
+    
+    <script>
+        let jv=window['w-jsonview-table']
+
+        let data1={a1:123,b1:'xyz',c1:[1.2,3.4,'5.6',true],d1:{cid:'WK2WHS',name:'peter',unique:false}}
+        jv(data1,document.querySelector('#tree1'))
+
+        let data2={a2:456,b2:'opqr',c2:['5.6',3.4,1.2,false],d2:{cid:'JL7HS',name:'lisa u',unique:true,url:'http://google.com'}}
+        jv(data2,document.querySelector('#tree2'),{hyperlinks:{enable:true,keys:['url']},bool:{showText:true,text:{true:'Yes',false:'No'}}})
+
+    </script>
+
+</body>
+</html>
