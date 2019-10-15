@@ -15,17 +15,17 @@
 
 .CompCssDJsonViewTable .jh-type-number{
     text-align: center;
-    color: #f9ae58;
+    color: #536dfe;
 }
 
 .CompCssDJsonViewTable .jh-type-bool-true{
     text-align: center;
-    color: #ec5f66;
+    color: #9ccc65;
 }
 
 .CompCssDJsonViewTable .jh-type-bool-false{
     text-align: center;
-    color: #ec5f66;
+    color: #9ccc65;
 }
 
 .CompCssDJsonViewTable .jh-type-bool-image {
@@ -36,7 +36,7 @@
 }
 
 .CompCssDJsonViewTable .jh-type-string{
-    color: #86b25c;
+    color: #ffab40;
 }
 
 .CompCssDJsonViewTable .jh-array-key{
@@ -45,7 +45,7 @@
 }
 
 .CompCssDJsonViewTable .jh-object-key, .jh-array-key{
-    color: #444;
+    color: #616161;
     vertical-align: top;
 }
 
