@@ -1,11 +1,11 @@
 {
   "name": "w-jsonview-table",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "A wrapper for json.human.js.",
   "main": "dist/w-jsonview-table.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "w-package-tools": "^1.0.23"
+    "w-package-tools": "^1.0.25"
   },
   "scripts": {
     "test": "./node_modules/.bin/mocha --require @babel/register",
