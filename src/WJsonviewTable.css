@@ -64,7 +64,7 @@
 
 .CompCssDJsonViewTable .jh-root{
     border: 1px solid #ccc;
-    margin: 0.2em;
+    /* margin: 0.2em; */
 }
 
 .CompCssDJsonViewTable .jh-key{

@@ -17,6 +17,8 @@ To view some examples for more understanding, visit examples:
 
 > **large data:** [ex-large.html](https://yuda-lyu.github.io/w-jsonview-table/examples/ex-large.html) [[source code](https://github.com/yuda-lyu/w-jsonview-table/blob/master/docs/examples/ex-large.html)]
 
+> **formatter:** [ex-formatter.html](https://yuda-lyu.github.io/w-jsonview-table/examples/ex-formatter.html) [[source code](https://github.com/yuda-lyu/w-jsonview-table/blob/master/docs/examples/ex-formatter.html)]
+
 ## Installation
 ### Using npm(ES6 module):
 > **Note:** w-jsonview-table is not dependent on any package.
@@ -36,7 +38,7 @@ jv(data, element)
 ### In a browser(UMD module):
 Add script for w-jsonview-table.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.19/dist/w-jsonview-table.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.20/dist/w-jsonview-table.umd.js"></script>
 ```
 Directly use:
 ```alias
