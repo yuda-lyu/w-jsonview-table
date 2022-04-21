@@ -1,7 +1,6 @@
 {
   "name": "w-jsonview-table",
   "version": "1.0.21",
-  "description": "A wrapper for json.human.js.",
   "main": "dist/w-jsonview-table.umd.js",
   "dependencies": {},
   "devDependencies": {
@@ -15,7 +14,6 @@
     "type": "git",
     "url": "https://github.com/yuda-lyu/w-jsonview-tree"
   },
-  "homepage": "https://yuda-lyu.github.io/w-jsonview-tree/w-jsonview-tree.html",
   "keywords": [
     "package",
     "tool",
