@@ -176,7 +176,8 @@ function WJsonviewTable(jsonObj, rootElem, option) {
         let hyperlinksEnabled, aTarget, hyperlinkKeys
 
         switch (type) {
-        case BOOL:
+
+        case BOOL: {
             let boolOpt = options.bool
             container = document.createElement('div')
 
@@ -199,7 +200,9 @@ function WJsonviewTable(jsonObj, rootElem, option) {
             result = container
             break
 
-        case STRING:
+        }
+
+        case STRING: {
             if (data === '') {
                 result = sn('span', STRING_EMPTY_CLASS_NAME, '(Empty Text)')
             }
@@ -207,13 +210,19 @@ function WJsonviewTable(jsonObj, rootElem, option) {
                 result = sn('span', STRING_CLASS_NAME, data)
             }
             break
-        case INT:
+        }
+
+        case INT: {
             result = sn('span', INT_CLASS_NAME, data)
             break
-        case FLOAT:
+        }
+
+        case FLOAT: {
             result = sn('span', FLOAT_CLASS_NAME, data)
             break
-        case OBJECT:
+        }
+
+        case OBJECT: {
             childs = []
 
             aTarget = options.hyperlinks.target
@@ -221,9 +230,9 @@ function WJsonviewTable(jsonObj, rootElem, option) {
 
             // Is Hyperlink Key
             hyperlinksEnabled =
-                    options.hyperlinks.enable &&
-                    hyperlinkKeys &&
-                    hyperlinkKeys.length > 0
+                            options.hyperlinks.enable &&
+                            hyperlinkKeys &&
+                            hyperlinkKeys.length > 0
 
             for (key in data) {
                 isEmpty = false
@@ -234,8 +243,8 @@ function WJsonviewTable(jsonObj, rootElem, option) {
                 keyNode = sn('th', OBJ_KEY_CLASS_NAME, key)
 
                 if (hyperlinksEnabled &&
-                        typeof (value) === 'string' &&
-                        indexOf.call(hyperlinkKeys, key) >= 0) {
+                                typeof (value) === 'string' &&
+                                indexOf.call(hyperlinkKeys, key) >= 0) {
 
                     valNode = scn('td', OBJ_VAL_CLASS_NAME, linkNode(valNode, value, aTarget))
                 }
@@ -257,10 +266,14 @@ function WJsonviewTable(jsonObj, rootElem, option) {
                 result = scn('table', OBJECT_CLASS_NAME, scn('tbody', '', childs))
             }
             break
-        case FUNCTION:
+        }
+
+        case FUNCTION: {
             result = sn('span', FUNCTION_CLASS_NAME, data)
             break
-        case ARRAY:
+        }
+
+        case ARRAY: {
             if (data.length > 0) {
                 childs = []
                 let showArrayIndices = options.showArrayIndex
@@ -270,9 +283,9 @@ function WJsonviewTable(jsonObj, rootElem, option) {
 
                 // Hyperlink of arrays?
                 hyperlinksEnabled = parentKey && options.hyperlinks.enable &&
-                        hyperlinkKeys &&
-                        hyperlinkKeys.length > 0 &&
-                        indexOf.call(hyperlinkKeys, parentKey) >= 0
+                                hyperlinkKeys &&
+                                hyperlinkKeys.length > 0 &&
+                                indexOf.call(hyperlinkKeys, parentKey) >= 0
 
                 for (key = 0, len = data.length; key < len; key += 1) {
 
@@ -303,9 +316,13 @@ function WJsonviewTable(jsonObj, rootElem, option) {
                 result = sn('span', ARRAY_EMPTY_CLASS_NAME, '(Empty List)')
             }
             break
-        default:
+        }
+
+        default: {
             result = sn('span', UNKNOWN_CLASS_NAME, data)
             break
+        }
+
         }
 
         return result
