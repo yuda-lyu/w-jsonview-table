@@ -1,10 +1,10 @@
 {
   "name": "w-jsonview-table",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "main": "dist/w-jsonview-table.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "w-package-tools": "^1.0.66"
+    "w-package-tools": "^1.0.69"
   },
   "scripts": {
     "test": "mocha --parallel --timeout 60000 --experimental-modules --es-module-specifier-resolution=node",
