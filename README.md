@@ -4,7 +4,6 @@ A wrapper for json.human.js.
 ![language](https://img.shields.io/badge/language-JavaScript-orange.svg) 
 [![npm version](http://img.shields.io/npm/v/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) 
 [![license](https://img.shields.io/npm/l/w-jsonview-table.svg?style=flat)](https://npmjs.org/package/w-jsonview-table) 
-[![gzip file size](http://img.badgesize.io/yuda-lyu/w-jsonview-table/master/dist/w-jsonview-table.umd.js.svg?compression=gzip)](https://github.com/yuda-lyu/w-jsonview-table)
 [![npm download](https://img.shields.io/npm/dt/w-jsonview-table.svg)](https://npmjs.org/package/w-jsonview-table) 
 [![npm download](https://img.shields.io/npm/dm/w-jsonview-table.svg)](https://npmjs.org/package/w-jsonview-table) 
 [![jsdelivr download](https://img.shields.io/jsdelivr/npm/hm/w-jsonview-table.svg)](https://www.jsdelivr.com/package/npm/w-jsonview-table)
@@ -21,6 +20,7 @@ To view some examples for more understanding, visit examples:
 > **formatter:** [ex-formatter.html](https://yuda-lyu.github.io/w-jsonview-table/examples/ex-formatter.html) [[source code](https://github.com/yuda-lyu/w-jsonview-table/blob/master/docs/examples/ex-formatter.html)]
 
 ## Installation
+
 ### Using npm(ES6 module):
 > **Note:** w-jsonview-table is not dependent on any package.
 ```alias
@@ -37,10 +37,12 @@ jv(data, element)
 ```
 
 ### In a browser(UMD module):
+
 Add script for w-jsonview-table.
 ```alias
 <script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.25/dist/w-jsonview-table.umd.js"></script>
 ```
+
 Directly use:
 ```alias
 let jv=window['w-jsonview-table']
