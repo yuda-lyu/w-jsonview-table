@@ -40,7 +40,7 @@ jv(data, element)
 
 Add script for w-jsonview-table.
 ```alias
-<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.25/dist/w-jsonview-table.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/w-jsonview-table@1.0.26/dist/w-jsonview-table.umd.js"></script>
 ```
 
 Directly use:
