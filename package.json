@@ -1,10 +1,10 @@
 {
   "name": "w-jsonview-table",
-  "version": "1.0.39",
+  "version": "1.0.40",
   "main": "dist/w-jsonview-table.umd.js",
   "dependencies": {},
   "devDependencies": {
-    "w-package-tools": "^1.1.29"
+    "w-package-tools": "^1.1.30"
   },
   "scripts": {
     "test": "mocha --parallel \"test/*.test.mjs\" --timeout 180000",
